@@ -1,5 +1,6 @@
 <h1>Listing posts</h1>
 
+<% if @posts.size > 0 %>
 <table>
   <thead>
     <tr>
@@ -25,5 +26,6 @@
 </table>
 
 <br>
+<% end %>
 
 <%= link_to 'New Post', new_post_path, :class => 'button' %>
