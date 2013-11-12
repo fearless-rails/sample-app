@@ -13,13 +13,19 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :placeholder => 'Fearless Rails Deployment' %>
   </div>
+
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author, :placeholder => 'Zachary Danger Campbell' %>
+  </div>
+
   <div class="field">
     <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, :placeholder => 'Lots of boring text about Rails deployments' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit nil, :class => 'button' %>
   </div>
 <% end %>
