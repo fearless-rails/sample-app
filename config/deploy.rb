@@ -1,17 +1,23 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'sample-app'
+set :repo_url, 'https://github.com/XORangeJuice/sample-app.git'
 
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :deploy_to, '/home/deploy/sample-app-auto'
 
-# set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :branch, 'master'
+
+set :scm, :git
 
 # set :format, :pretty
 # set :log_level, :debug
 # set :pty, true
 
-# set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_files, %w{config/database.yml}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/assets}
+
+set :rvm_type, :system
+set :ruby, '2.0.0-p247'
+
+set :rails_env, 'production'
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 # set :keep_releases, 5
