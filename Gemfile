@@ -40,6 +40,8 @@ gem 'therubyracer'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'resque', '1.25.2'
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
