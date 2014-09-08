@@ -47,3 +47,5 @@ gem 'resque', '1.25.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'whenever', :require => false
