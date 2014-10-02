@@ -1,5 +1,5 @@
 set :application, 'sample-app'
-set :repo_url, 'https://github.com/XORangeJuice/sample-app.git'
+set :repo_url, 'https://github.com/fearless-rails/sample-app.git'
 
 set :deploy_to, '/home/deploy/sample-app-auto'
 
