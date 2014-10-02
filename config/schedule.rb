@@ -19,6 +19,8 @@
 
 # Learn more: http://github.com/javan/whenever
 
+# log any output to log/cron.log
+set :output, File.expand_path(File.join(File.dirname(__FILE__), "../log/cron.log"))
 
 every 1.minute do
   rake "example:a_cron_job"
