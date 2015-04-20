@@ -15,7 +15,7 @@ set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/assets}
 
 set :rvm_type, :user
-set :ruby, '2.1.1'
+set :ruby, '2.1.2'
 
 set :rails_env, 'production'
 
